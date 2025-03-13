@@ -1,0 +1,35 @@
+.profile {
+    max-width: 300px;
+
+    &__avatar {
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        border: 1px solid #3d444d;
+        width: 270px;
+        img {
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    &__name {
+        margin-top: 10px;
+        text-align: center;
+        font: $heading-bold-20;
+        color: 000000;
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        .pi {
+            font-size: 40px;
+            cursor: pointer;
+            &-github {
+                color: #000000;
+            }
+        }
+    }
+}

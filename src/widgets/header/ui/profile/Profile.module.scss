@@ -1,0 +1,13 @@
+.profile {
+    &__btn {
+        background: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    &__avatar {
+        border-radius: 6px;
+        background-color: #f1f5f9;
+        overflow: hidden;
+    }
+}

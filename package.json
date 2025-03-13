@@ -1,0 +1,52 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build ",
+    "dev": "nuxt dev --dotenv .env.development --open --host",
+    "start:prod": "node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "preview": "nuxt build & nuxt preview --dotenv .env.production",
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky",
+    "lint": "npx oxlint --fix"
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js,vue}": [
+      "npm run lint"
+    ]
+  },
+  "dependencies": {
+    "@apollo/client": "^3.12.9",
+    "@pinia/nuxt": "^0.9.0",
+    "@primevue/themes": "^4.2.5",
+    "@tanstack/vue-query": "^5.59.13",
+    "@vee-validate/nuxt": "^4.15.0",
+    "@vee-validate/zod": "^4.15.0",
+    "@vue/apollo-composable": "^4.2.1",
+    "graphql": "^16.10.0",
+    "graphql-tag": "^2.12.6",
+    "install": "^0.13.0",
+    "nuxt": "^3.15.2",
+    "nuxt-svgo": "^4.0.14",
+    "pinia": "^2.3.1",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.5",
+    "vue": "3.5.13",
+    "vue-router": "latest",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/storybook": "^8.3.3",
+    "@primevue/nuxt-module": "^4.2.5",
+    "@storybook/addon-essentials": "8.4.7",
+    "@storybook/addon-interactions": "8.4.7",
+    "@storybook/addon-links": "8.4.7",
+    "husky": "^9.1.7",
+    "oxlint": "^0.15.11",
+    "sass": "^1.83.1"
+  }
+}

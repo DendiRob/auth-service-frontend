@@ -1,0 +1,32 @@
+@use "reset";
+@use "fonts";
+@import url("primeicons/primeicons.css");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: $body-regular-16;
+    scroll-behavior: smooth;
+}
+
+button {
+    padding: 0;
+    font: $body-regular-16;
+}
+
+a {
+    color: #1c9fd4;
+    font: $body-regular-14;
+}
+
+body {
+    background-color: $body-base-clr;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+
+    .nuxt-icon {
+        margin: 0;
+    }
+}
